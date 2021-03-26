@@ -18,10 +18,10 @@ namespace CsharpTutorial
         {
             point point2 = new point();
             point point = new point(5,10);
-            int x=point2.X = 2;
-            int y=point2.Y = 3;
+            int x=point2.x = 2;
+            int y=point2.y = 3;
             Console.WriteLine("The value of point x=" + x + " and Y=" + y);
-            Console.WriteLine("The value of point x=" + point.X + " and Y=" + point.Y);
+            Console.WriteLine("The value of point x=" + point.x + " and Y=" + point.y);
             //Console.WriteLine("value of x=" + x + " and the value of Y=" + y);
 
             Console.ReadLine();
