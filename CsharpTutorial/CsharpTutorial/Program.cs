@@ -16,12 +16,15 @@ namespace CsharpTutorial
         /*static keyword is used to call a method before class instantiation, which means that you can call a function without creating the object of that class.*/
         static void Main()
         {
-            point point = new point();
-            int x=point.x = 2;
-            int y=point.y = 3;
-            Console.WriteLine("value of x=" + x + " and the value of Y=" + y);
+            point point2 = new point();
+            point point = new point(5,10);
+            int x=point2.X = 2;
+            int y=point2.Y = 3;
+            Console.WriteLine("The value of point x=" + x + " and Y=" + y);
+            Console.WriteLine("The value of point x=" + point.X + " and Y=" + point.Y);
+            //Console.WriteLine("value of x=" + x + " and the value of Y=" + y);
+
             Console.ReadLine();
         }
-
     }
 }

@@ -2,10 +2,21 @@
 
 namespace PointsAndLines
 {
+
     class point
     {
-        public int x;
-        public int y;
+        public int X;
+        public int Y;
+
+        public point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+        public point()
+        {
+         
+        }
     }
 }
 
