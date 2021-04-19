@@ -10,7 +10,14 @@ namespace PointsAndLines
         private int password;
 
         /*static keyword is used to call a variable/method before/without class instantiation, which means that you can access a valute of a variable, or call a function without creating the object of that class.*/
-        public static int ID;
+        public static int currentID;
+
+        //There are two types of constants, const and readonly
+        //const=The value of the variable is constant throughout the class
+        //readOnly=The value of the variable can't be set outside of the class
+
+        public readonly int id;
+        public const int WEIGHT = 40;
 
 
         //We are gonna make our Username readOnly using the get and set the value of the username using the constructor
@@ -54,7 +61,8 @@ namespace PointsAndLines
    
         public User(string username)
         {
-            ID++;
+            currentID++;
+            id = currentID;
             this.username = username;           
             
         }
@@ -62,7 +70,8 @@ namespace PointsAndLines
     // a constructor without parameters
     public User()
         {
-            ID++;
+            currentID++;
+            id = currentID;
         }
     }
 }
