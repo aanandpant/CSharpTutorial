@@ -16,9 +16,18 @@ namespace CsharpTutorial
         /*static keyword is used to call a method before class instantiation, which means that you can call a function without creating the object of that class.*/
         static void Main()
         {
-            User user = new User("Aanand");
-            user.Password = 5;
-            Console.WriteLine(user.Username);
+            //User.ID is the static variable of the User class and can be accessed without even creating an instance of this class.
+            Console.WriteLine(User.ID);
+            User user1 = new User("Aanand");
+            user1.Password = 5;
+            Console.WriteLine(user1.Username);
+            Console.WriteLine(User.ID);
+
+            User user2 = new User("Andrew");
+            user2.Password = 10;
+            Console.WriteLine(user2.Username);
+            Console.WriteLine(User.ID);
+
             Console.ReadLine();
 
 

@@ -8,7 +8,11 @@ namespace PointsAndLines
     {
         private string username;
         private int password;
-        
+
+        /*static keyword is used to call a variable/method before/without class instantiation, which means that you can access a valute of a variable, or call a function without creating the object of that class.*/
+        public static int ID;
+
+
         //We are gonna make our Username readOnly using the get and set the value of the username using the constructor
         public string Username {
             get {
@@ -50,7 +54,7 @@ namespace PointsAndLines
    
         public User(string username)
         {
-
+            ID++;
             this.username = username;           
             
         }
@@ -58,7 +62,7 @@ namespace PointsAndLines
     // a constructor without parameters
     public User()
         {
-         
+            ID++;
         }
     }
 }
