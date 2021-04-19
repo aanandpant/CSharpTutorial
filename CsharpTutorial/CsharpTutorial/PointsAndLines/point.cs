@@ -1,74 +1,80 @@
 ﻿/*namespaces helps you to organize class files*/
 
+
 namespace PointsAndLines
 {
 
-    class point
+    class User
     {
-        //the below variables are known as field variables and have to be in lowercase(It could be in uppercase, but we use lowercase just for convention purposes)
-        // the access modifiers of the field variables is usually private and are not directly exposed to the 'outside world'. Their values can only be accessed via a property or some other logic in the class
-        private int x;
-        private int y;
-        private int z;
-        //public int X;
-        //public int Y;
+        private string username;
+        private int password;
+        
 
-        //creating a property with get and set block of a variable 
-        //a property of a variable is written to access the private members of the class outside of the class
-
-            //start of the property block
-        public int X {
+        public string Username {
             get {
-                // will do some logic below as soon as the value of the variable is set
+               
 
-                return x;
+                return "The user name is : "+username;
+                
 
             }
 
             set {
-                //the value keyword sets the 'value' of the given property when the object of this class is called example 'obj.X=5'
-                x = value;
+                if (value.Length >= 4 && value.Length <= 10)
+                {
+                    username = value;
+                    
+                }
+                else
+                {
+                    System.Console.WriteLine("Oopsie!! This is not a valid username. Please enter a username of length between 4 to 10 characters");
+                }
+                
 
             }
 
         }
 
-        public int Y
+        public int Password
         {
             get
             {
-                // will do some logic below as soon as the value of the variable is set
+                
 
-                return y;
+                return password;
 
             }
 
             set
-            {   //you can set your own logic below like y=value+1
-                //the value keyword sets the 'value' of the given property when the object of this class is called example 'obj.X=5'
-                y = value;
+            {
+
+                if (value >= 4 && value <= 10)
+                {
+                    password = value;
+
+                }
+                else
+                {
+                    System.Console.WriteLine("Oopsie!! This is not a valid Password. Please enter a password between values of 4 to 10");
+                }
+                
 
             }
 
         }
 
-        //end of the property block with get and set blocks
 
-
-        //a constructor expecting parameters
-        public point(int x, int y)
+   
+        public User(string username, int password)
         {
-            //this keyword allows you to access the field variables/variables declared in the class.
-            //this keyword is only used to avoid the conflict of variable names. always use the keyword this to show that you are pointing a member from your class if there is a name conflict. 
-            //use based on your personal preference or company standards. 'this' keyword is optional to use.
-            //'this' provides no benefits, performance. it's just a syntactic sugar.
-            this.x = x;
-            this.y = y;
-            //this.z = y;
+
+            this.username = username;
+            this.password = password;
+            //this.z = password;
         }
 
     // a constructor without parameters
-    public point()
+    public User()
         {
          
         }
