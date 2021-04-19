@@ -9,7 +9,7 @@ namespace PointsAndLines
         private string username;
         private int password;
         
-
+        //We are gonna make our Username readOnly using the get and set the value of the username using the constructor
         public string Username {
             get {
                
@@ -19,31 +19,14 @@ namespace PointsAndLines
 
             }
 
-            set {
-                if (value.Length >= 4 && value.Length <= 10)
-                {
-                    username = value;
-                    
-                }
-                else
-                {
-                    System.Console.WriteLine("Oopsie!! This is not a valid username. Please enter a username of length between 4 to 10 characters");
-                }
-                
-
-            }
+  
 
         }
 
+        //We are gonna make our Password WriteOnly using set 
         public int Password
         {
-            get
-            {
-                
 
-                return password;
-
-            }
 
             set
             {
@@ -55,7 +38,7 @@ namespace PointsAndLines
                 }
                 else
                 {
-                    System.Console.WriteLine("Oopsie!! This is not a valid Password. Please enter a password between values of 4 to 10");
+                    System.Console.WriteLine("Oopsie!! This is not a valid Password. Please enter a password between values of 4 and 10");
                 }
                 
 
@@ -65,12 +48,11 @@ namespace PointsAndLines
 
 
    
-        public User(string username, int password)
+        public User(string username)
         {
 
-            this.username = username;
-            this.password = password;
-            //this.z = password;
+            this.username = username;           
+            
         }
 
     // a constructor without parameters
