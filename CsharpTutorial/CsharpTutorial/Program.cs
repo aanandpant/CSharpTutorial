@@ -1,6 +1,7 @@
 ﻿/* list of namespaces*/
 using System;
 using PointsAndLines;
+using Utility;
 
 namespace CsharpTutorial
 {
@@ -18,10 +19,15 @@ namespace CsharpTutorial
         {
             //User.ID is the static variable of the User class and can be accessed without even creating an instance of this class.
             //Race is the enumeration datatype that we've defined and has two values: earthling and alien.
+            //ConsoleColor is an enumeration;
+            //Console is a static class of the System namespace
             Console.ForegroundColor = ConsoleColor.Red;
             User user1 = new User("Aanand",Race.earthling);
             user1.Password = 5;
-            Console.WriteLine(user1.Username);
+            Utilities.ColorfulWriteLine(user1.Username, ConsoleColor.Red);
+            user1.SayMyName();
+            
+
             Console.WriteLine("This is userID "+user1.id);
             Console.WriteLine(user1.race);
 

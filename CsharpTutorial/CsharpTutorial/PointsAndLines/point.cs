@@ -1,5 +1,6 @@
 ﻿/*namespaces helps you to organize class files*/
-
+using System;
+using Utility;
 
 namespace PointsAndLines
 {
@@ -86,6 +87,13 @@ namespace PointsAndLines
             currentID++;
             id = currentID;
         }
-    }
+
+
+     public void SayMyName()
+        {
+            Utilities.ColorfulWriteLine(this.username, ConsoleColor.DarkRed);
+        }
+
+     }
 }
 
