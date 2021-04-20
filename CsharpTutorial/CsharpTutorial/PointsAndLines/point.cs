@@ -17,7 +17,10 @@ namespace PointsAndLines
         //readOnly=The value of the variable can't be set outside of the class
 
         public readonly int id;
-        public const int WEIGHT = 40;
+        public readonly int HEIGHT;
+
+        //We have defined the enum data type in the Race class file.
+        public Race race;
 
 
         //We are gonna make our Username readOnly using the get and set the value of the username using the constructor
@@ -59,11 +62,21 @@ namespace PointsAndLines
 
 
    
-        public User(string username)
+        public User(string username,Race race)
         {
             currentID++;
             id = currentID;
-            this.username = username;           
+            this.username = username;
+            this.race = race;
+            if (this.race==Race.alien)
+            {
+                HEIGHT = 100;
+            }
+            else
+            {
+                HEIGHT = 180;
+            }
+            race = Race.alien;
             
         }
 
