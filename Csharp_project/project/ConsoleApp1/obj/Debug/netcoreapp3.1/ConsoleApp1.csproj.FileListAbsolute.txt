@@ -1,0 +1,13 @@
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\bin\Debug\netcoreapp3.1\WarriorWars.exe
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\bin\Debug\netcoreapp3.1\WarriorWars.deps.json
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\bin\Debug\netcoreapp3.1\WarriorWars.runtimeconfig.json
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\bin\Debug\netcoreapp3.1\WarriorWars.runtimeconfig.dev.json
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\bin\Debug\netcoreapp3.1\WarriorWars.dll
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\bin\Debug\netcoreapp3.1\WarriorWars.pdb
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\WarriorWars.dll
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\WarriorWars.pdb
+C:\Users\cpant\Documents\CSharpTutorial\Csharp_project\project\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
