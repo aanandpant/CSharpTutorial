@@ -1,5 +1,6 @@
 ﻿using WarriorWars.Equipment;
 using WarriorWars.Enum;
+using System;
 namespace WarriorWars
 {
     class Warrior
@@ -51,10 +52,17 @@ namespace WarriorWars
         {
             int damage = weapon.Damage / enemy.armor.ArmorPoints;
             enemy.health = enemy.health - damage;
-            if(enemy.health<=0)
+            AttackResult(enemy, damage);
+        }
+
+        private void AttackResult(Warrior enemy, int damage)
+        {
+            if (enemy.health <= 0)
             {
                 enemy.isAlive = false;
-                System.Console.WriteLine($"{enemy.name} is dead, and {name} wins");
+
+                Tools.ColorfulWriteLine($"{enemy.name} is dead!", ConsoleColor.Red);
+                Tools.ColorfulWriteLine($"{name} is the winner!", ConsoleColor.Green);
                 System.Console.ReadLine();
             }
             else
